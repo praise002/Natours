@@ -4,4 +4,5 @@
 - npm init
 - npm install node-sass --save-dev
 - npm run compile:sass
-- npm install ive-server -g
+- npm install live-server -g
+- ctrl + d
