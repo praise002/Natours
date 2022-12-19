@@ -10,6 +10,12 @@
     visibility: hidden;
     transition: all .3s;
 
+    @include respond(phone) {
+        top: 30%;
+        height: 80vh;
+        overflow: scroll;
+    }
+
     &__content {
         @include absCenter;
 
@@ -24,12 +30,21 @@
 
         opacity: 0;
         transform: translate(-50%, -50%) scale(0.25);
+
+        @include respond(tab-port) {
+            width: 100%;
+            transform: translate(0) scale(0);
+        }
     }
 
     &__left {
         width: 33.333333%;
-        width: 40%;
+        // width: 40%;
         display: table-cell;
+
+        @include respond(tab-port) {
+            display: none;
+        }
     }
 
     &__right {

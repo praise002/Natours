@@ -7,10 +7,31 @@
 }
 
 html{
-    font-size: 62.5%;
+    font-size: 62.5%;  //62.5% of 16px = 10px
+
+    // @include respond-phone {
+    //     font-size: 50%;
+    // }
+
+    @include respond(tab-land) {  //56.25% of 16px = 9px < 1200px
+        font-size: 56.25%;
+    }
+
+    @include respond(tab-port) {  //50% of 16px = 8px  < 900px
+        font-size: 50%;
+    }
+
+    @include respond(big-desktop) {  //75% of 16px = 12px 12/16
+        font-size: 75%;
+    }
 }
 
 body {
     box-sizing: border-box;
+    padding: 3rem;
+
+    @include respond(tab-port) {  //50% of 16px = 8px  < 900px
+        padding: 0;
+    }
 }
 
