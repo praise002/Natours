@@ -8,6 +8,7 @@
 - npm run concat:css
 - npm run compress:css
 - npm run build:css
+- npm run start
 - npm install live-server -g
 - ctrl + d
 - npm install concat --save-dev
